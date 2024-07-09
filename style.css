@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  background-image: url(./images/bg-hero-desktop.svg);
+}
+
+header {
+  padding: 15px 55px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 210px;
+}
+
+nav button {
+  background-color: wheat;
+  color: white;
+  border: none;
+  padding: 0.5em 1.3em;
+  font-size: 1.4rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.home {
+  margin: 3em 0;
+}
+
+.container {
+  margin-left: 1.5em;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.home-content {
+  width: 30%;
+}
+
+.home-content h1 {
+  font-size: 3.2rem;
+  color: black;
+}
+
+.home-content p {
+  font-size: 1.5rem;
+  margin: 1.5em 0;
+  color: black;
+}
+
+.home-content button {
+  font-size: 1.2rem;
+  padding: 0.9em 1.1em;
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(233, 138, 154);
+  color: white;
+  cursor: pointer;
+}
+
+.home-image img {
+  max-width: 100%;
+}
+
+.grow-together {
+  margin-bottom: 150px;
+}
+
+.grow {
+  margin-bottom: 4em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 1px -1px 10px -1px rgba(0, 0, 0, 0.75);
+  background-color: white;
+  border-radius: 15px;
+  padding: 2em 0;
+  position: relative;
+}
+
+.grow-together-content {
+  width: 50%;
+}
+
+.grow-together-content h3 {
+  font-size: 2.9rem;
+  font-weight: 700;
+  color: black;
+}
+
+.grow-together-content p {
+  font-size: 1.6rem;
+  margin-top: 1em;
+  color: black;
+}
+
+.grow-together-image {
+  width: 30%;
+}
+
+.grow-together-image img {
+  max-width: 100%;
+}
+
+.community {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  box-shadow: 1px -1px 7px -1px rgba(0, 0, 0, 0.75);
+  padding: 2em 0;
+  text-align: center;
+  border-radius: 20px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  bottom: 60%;
+}
+
+.community h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.community button {
+  background-color: purple;
+  padding: 0.5em 1.3em;
+  font-size: 1.6rem;
+  border-radius: 50px;
+  color: white;
+  margin-top: 1em;
+  border: none;
+}
+
+footer {
+  background-color: darkcyan;
+  padding: 6em 0;
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.col1 p {
+  margin: 1em 0;
+}
+
+.col1 img {
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+.col2 p {
+  margin: 1em 0;
+  padding-left: 20px;
+}
+
+.social i {
+  font-size: 1.6rem;
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 0.3em;
+  color: white;
+}
+
+i + i {
+  margin-left: 0.7em;
+}
+
+i:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+@media screen and (min-width: 850px) and (max-width: 990px) {
+  .home-content {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 679px) and (max-width: 850px) {
+  .home-container {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-content {
+    width: 100%;
+  }
+
+  .home-image {
+    text-align: center;
+  }
+
+  .home-image img {
+    width: 80%;
+  }
+
+  .col {
+    width: 50%;
+  }
+
+  .social i {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 679px) {
+  .home-container {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-content {
+    width: 100%;
+  }
+
+  .home-image {
+    text-align: center;
+  }
+
+  .home-image img {
+    width: 80%;
+  }
+
+  .grow-together .grow {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .grow-together-content {
+    width: 90%;
+  }
+
+  .grow-together-image {
+    width: 100%;
+  }
+
+  .community {
+    padding: 1em;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  header {
+    padding: 10px;
+  }
+  nav button {
+    padding: 0.5em 0.7em;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  .community {
+    bottom: 80%;
+  }
+  .social i {
+    margin: 0;
+  }
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 15px;
+    place-items: center;
+  }
+  .social {
+    display: flex;
+    gap: 10px;
+  }
+  .col {
+    min-width: 100px;
+    width: 100%;
+  }
+}
